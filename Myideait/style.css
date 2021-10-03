@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font Imported from google font */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+body {
+    background-image:linear-gradient(#0000004f , #0000004f ), url('image/360_F_119115529_mEnw3lGpLdlDkfLgRcVSbFRuVl6sMDty.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    backdrop-filter: blur(8px);
+
+    /* This is for all placeholder text color. */
+
+}
+
+.input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: .9;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+
+.container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.content {
+
+    display: block;
+    position: relative;
+    width: 550px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 3%;
+    padding: 15px;
+
+}
+
+.content h1 {
+
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Courgette', cursive;
+    width: 260px;
+    height: 105px;
+    font-size: 60px;
+}
+
+.lgo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 110px; */
+    margin-bottom: 20px;
+}
+
+.img {
+    width: 100px;
+    display: block;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+
+
+.input-form {
+    width: 500px;
+    height: 250px;
+    background: #2e2e2e3e;
+    border-radius: 5px;
+    box-shadow: 5px 5px 13px black;
+    margin: 0 auto;
+}
+
+.input {
+    width: 450px;
+    height: 45px;
+    border: 2px solid #c2c2c258;
+    border-radius: 8px;
+    padding-left: 20px;
+    font-size: 15px;
+    color: #ffffff;
+    background: #3d3d3d78;
+    margin-bottom: 15px;
+
+
+
+}
+
+.inpt-bx {
+    padding: 25px 23px;
+}
+
+.rmrbr-me {
+    color: #dad7d7;
+    margin-left: 10px;
+    display: block;
+    position: relative;
+    width: 45%;
+}
+
+.lg-in-btn {
+    padding: 7px 35px;
+    font-size: 15px;
+    background: #86868664;
+    border: 1px solid #FFFFFF;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    float: right;
+    margin-right: 20px;
+    z-index: 2;
+    color: #ffffff;
+    box-shadow: 3.3px 4px 3px #000000;
+    transition: .2s;
+}
+
+.lg-in-btn:hover {
+    background-color: #86868684;
+    color: #f9f9f9;
+    border: 1px solid #ebebeb;
+    box-shadow: 0px 0px 3px #000000;
+    transform: translate(2px, 2px);
+
+
+}
+
+
+
+/* Forget password part*/
+
+.frgt-pass {
+    text-decoration: none;
+    color: #a3a3ff;
+    pointer-events: none;
+
+}
+
+.frgt-pass-blk {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 5px;
+    width: 130px;
+    margin-top: 53px;
+    visibility: hidden;
+    
+
+}
+
+
+/* This is for mobile or small screen view */
+
+@media (max-width: 700px) {
+
+
+
+
+    .content {
+
+        /* display: block;
+        position: relative; */
+        /* width: 450px; */
+        width: 90%;
+        /* height: auto;
+        margin: 0 auto;
+        padding: 15px;
+     */
+    }
+
+    .input {
+        width: 100%;
+
+    }
+
+    .input-form {
+        width: 100%;
+        padding: 18px 20px;
+    }
+
+    .inpt-bx {
+        padding: 0;
+    }
+
+
+
+    .lg-in-btn {
+        padding: 1.5% 8%;
+        margin-right: 10px;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+    }
+
+
+.frgt-pass-blk    {    
+
+    font-size: 14px;
+    width: 41%;
+    margin-top: 21%;;
+    }
+        
+
+}
